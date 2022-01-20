@@ -10,7 +10,7 @@
 
 Import-Module ActiveDirectory
 
-    $Server = DOMAINCONTROLLER.FQDN
+    $Server = "DOMAINCONTROLLER.FQDN"
 
 Import-Csv “c:\path-to-csv.csv” | ForEach-Object {
 

@@ -5,9 +5,9 @@ Any additional properties can be added as a header and inserted into the New-ADU
 
 Import-Module ActiveDirectory
 
-    $Server = DOMAINCONTROLLER.FQDN
+    $Server = "DOMAINCONTROLLER.FQDN"
     
-    Import-Csv c:\path-to-csv.csv | foreach-object {
+    Import-Csv "c:\path-to-csv.csv" | foreach-object {
         
         $setpass = ConvertTo-SecureString -AsPlainText $_.accountPassword -force
         
